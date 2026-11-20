@@ -1,0 +1,13 @@
+# IDE Configurations
+.vscode/
+
+# Local Documentation
+volumes/
+logs/
+
+# Compiled source 
+bin/
+
+# Private Key Files
+*.pub
+*.key

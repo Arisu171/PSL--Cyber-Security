@@ -1,0 +1,18 @@
+options {
+	directory "/var/cache/bind";
+
+	// dnssec-validation auto;
+	dnssec-validation no;
+	dump-file "/var/cache/bind/dump.db";
+	query-source port 44444;
+	// Tat DNS Cookie de goi Response gia mao (khong co cookie) van duoc chap nhan
+	send-cookie no;
+	require-server-cookie no;
+
+	// Access control
+	allow-query { any; };
+	allow-query-cache { any; };
+	allow-recursion { any; };
+
+	listen-on-v6 { any; };
+};
